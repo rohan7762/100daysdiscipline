@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+             max-width: 1100px;
+    width: 90%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            background-color: #dddbdb;
+            border-radius: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.card p {
+    margin-bottom: 15px;
+}
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            background-color: black;
+        }
+        button:hover {
+    background-color: #333;
+}
+        @media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Features</h1>
+        <div class="flex-container">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Very fast performance and optimized design.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Works on mobile, tablet, and desktop.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Clean UI</h3>
+            <p>Simple and modern user interface design.</p>
+            <button>Learn More</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
